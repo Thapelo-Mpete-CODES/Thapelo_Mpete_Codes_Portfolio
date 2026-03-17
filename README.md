@@ -1,5 +1,5 @@
 
-[Live Demo](https://thapelo-mpete-codes.github.io/portfolio/)
+[Live Demo](https://thapelo-mpete-codes.github.io/Thapelo_Mpete_Codes_Portfolio/)
 
 About Me:
 I am a Diploma in IT (Software Development) graduate passionate about building real-world applications using C#, ASP.NET, HTML, CSS, and JavaScript.
@@ -20,12 +20,6 @@ Features:
  Responsive design  
  Project showcase with screenshots  
  Contact information  
-
-
-
-https://github.com/user-attachments/assets/b4bf7ca6-5159-42a6-a7ea-dfdf54efc385
-
-
 
 
 Screenshots: 
