@@ -14,7 +14,7 @@ Tools: Visual Studio, Git, GitHub
 Projects
 
 1. Personal Portfolio Website
-Live Demo: [Portfolio](https://thapelo-mpete-codes.github.io/portfolio/)  
+   
 Description: My personal portfolio showcasing my projects and skills.  
 Features:  
  Responsive design  
