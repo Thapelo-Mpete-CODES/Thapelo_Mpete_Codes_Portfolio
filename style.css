@@ -1,4 +1,3 @@
-
 /* =========================================
    GLOBAL SETTINGS
 ========================================= */
@@ -265,24 +264,24 @@ img {
 
 
 /* =========================================
-   HERO PORTRAIT
+   HERO PROFILE PHOTO
 ========================================= */
 
 .hero-visual {
     position: relative;
     width: 100%;
-    max-width: 420px;
+    max-width: 450px;
     justify-self: end;
 }
 
 .portrait-frame {
     position: relative;
     width: 100%;
-    height: 465px;
+    height: auto;
+    padding: 10px;
     border: 1px solid rgba(85, 214, 194, 0.25);
     border-radius: 12px;
     background: var(--surface);
-    padding: 10px;
     overflow: hidden;
     box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
 }
@@ -300,27 +299,26 @@ img {
 }
 
 .hero-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 25%;
-    border-radius: 7px;
     position: relative;
     z-index: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1000 / 681;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 7px;
+    background: var(--surface-light);
 }
 
 .portrait-label {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    bottom: 24px;
-    left: 24px;
-    right: 24px;
-    padding: 15px 17px;
+    margin-top: 10px;
+    padding: 13px 15px;
     display: flex;
     align-items: center;
     background: rgba(11, 16, 32, 0.88);
     border: 1px solid rgba(255, 255, 255, 0.13);
-    backdrop-filter: blur(12px);
     border-radius: 6px;
 }
 
@@ -341,6 +339,7 @@ img {
 
 .floating-tag {
     position: absolute;
+    z-index: 3;
     background: var(--surface-light);
     border: 1px solid var(--border);
     padding: 9px 13px;
@@ -357,12 +356,12 @@ img {
 }
 
 .tag-top {
-    top: 45px;
+    top: 35px;
     left: -35px;
 }
 
 .tag-bottom {
-    bottom: 65px;
+    bottom: 75px;
     right: -32px;
 }
 
@@ -414,7 +413,7 @@ img {
 
 .about-photo-wrap {
     position: relative;
-    max-width: 310px;
+    max-width: 330px;
     width: 100%;
     justify-self: center;
     padding: 10px;
@@ -425,7 +424,7 @@ img {
 
 .about-photo {
     width: 100%;
-    height: 350px;
+    height: 420px;
     object-fit: contain;
     object-position: center;
     border-radius: 4px;
@@ -801,11 +800,7 @@ img {
     }
 
     .hero-visual {
-        max-width: 350px;
-    }
-
-    .portrait-frame {
-        height: 410px;
+        max-width: 370px;
     }
 
     .skills-grid {
@@ -880,21 +875,22 @@ img {
     }
 
     .hero-visual {
-        max-width: 360px;
-        width: 90%;
+        max-width: 440px;
+        width: 94%;
         justify-self: center;
     }
 
     .portrait-frame {
-        height: 390px;
+        padding: 9px;
     }
 
     .tag-top {
-        left: -15px;
+        left: -12px;
     }
 
     .tag-bottom {
-        right: -15px;
+        right: -12px;
+        bottom: 70px;
     }
 
     .about-grid {
@@ -903,11 +899,11 @@ img {
     }
 
     .about-photo-wrap {
-        max-width: 270px;
+        max-width: 290px;
     }
 
     .about-photo {
-        height: 310px;
+        height: 390px;
     }
 
     .about-content h3 {
@@ -1005,8 +1001,8 @@ img {
         width: 100%;
     }
 
-    .portrait-frame {
-        height: 350px;
+    .hero-visual {
+        width: 92%;
     }
 
     .skills-grid {
@@ -1020,5 +1016,29 @@ img {
 
     .contact-actions .btn {
         width: 100%;
+    }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
     }
 }
