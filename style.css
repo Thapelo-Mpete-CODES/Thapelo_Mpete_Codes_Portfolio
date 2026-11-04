@@ -122,7 +122,7 @@ img {
 ========================================= */
 
 .hero {
-    min-height: 690px;
+    min-height: 650px;
     display: flex;
     align-items: center;
     position: relative;
@@ -142,13 +142,30 @@ img {
     pointer-events: none;
 }
 
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(43, 169, 150, 0.045);
+    filter: blur(100px);
+    bottom: -180px;
+    left: -120px;
+    pointer-events: none;
+}
+
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1.2fr 0.8fr;
     align-items: center;
-    gap: 70px;
+    gap: 90px;
     position: relative;
     z-index: 1;
+}
+
+.hero-content {
+    max-width: 690px;
 }
 
 .eyebrow {
@@ -159,8 +176,7 @@ img {
     margin-bottom: 22px;
 }
 
-.status-dot,
-.label-indicator {
+.status-dot {
     display: inline-block;
     width: 7px;
     height: 7px;
@@ -172,10 +188,10 @@ img {
 
 .hero h1 {
     font-family: var(--font-heading);
-    font-size: clamp(44px, 5.5vw, 70px);
+    font-size: clamp(48px, 6vw, 76px);
     line-height: 1.08;
-    letter-spacing: -3px;
-    max-width: 650px;
+    letter-spacing: -3.5px;
+    max-width: 700px;
     margin-bottom: 25px;
 }
 
@@ -186,7 +202,7 @@ img {
 }
 
 .hero-description {
-    max-width: 540px;
+    max-width: 550px;
     color: var(--muted);
     font-size: 16px;
     line-height: 1.9;
@@ -264,67 +280,85 @@ img {
 
 
 /* =========================================
-   HERO PROFILE PHOTO
+   HERO SIDE PANEL
 ========================================= */
 
+.hero-side {
+    min-height: 360px;
+    padding: 30px;
+    border: 1px solid rgba(85, 214, 194, 0.2);
+    border-radius: 8px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(85, 214, 194, 0.07),
+            transparent 55%
+        ),
+        var(--surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
 
-
-
-
-.portrait-glow {
+.hero-side::after {
+    content: "";
     position: absolute;
     width: 220px;
     height: 220px;
-    background: var(--accent);
-    opacity: 0.13;
-    filter: blur(90px);
-    top: 20px;
-    right: 0;
-    pointer-events: none;
+    right: -80px;
+    bottom: -90px;
+    border-radius: 50%;
+    border: 1px solid rgba(85, 214, 194, 0.12);
+    box-shadow:
+        0 0 0 25px rgba(85, 214, 194, 0.025),
+        0 0 0 50px rgba(85, 214, 194, 0.02);
 }
 
-
-.portrait-label strong,
-.portrait-label small {
-    display: block;
-}
-
-.portrait-label strong {
-    font-family: var(--font-heading);
-    font-size: 14px;
-}
-
-.portrait-label small {
-    font-size: 11px;
+.hero-side-top,
+.hero-side-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
     color: var(--muted);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
-.floating-tag {
-    position: absolute;
-    z-index: 3;
-    background: var(--surface-light);
-    border: 1px solid var(--border);
-    padding: 9px 13px;
-    border-radius: 5px;
-    font-size: 11px;
-    color: #d9e3f2;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+.side-line {
+    width: 30px;
+    height: 2px;
+    background: var(--accent);
 }
 
-.floating-tag span {
-    color: var(--accent);
-    margin-right: 6px;
+.hero-monogram {
+    font-family: var(--font-heading);
+    font-size: clamp(100px, 14vw, 165px);
     font-weight: 700;
+    letter-spacing: -12px;
+    line-height: 1;
+    color: rgba(243, 246, 252, 0.95);
 }
 
-.tag-top {
-    top: 35px;
-    left: -35px;
+.hero-monogram span {
+    color: var(--accent);
 }
 
-.tag-bottom {
-    bottom: 75px;
-    right: -32px;
+.hero-side-description {
+    max-width: 260px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.hero-side-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 17px;
 }
 
 
@@ -375,7 +409,7 @@ img {
 
 .about-photo-wrap {
     position: relative;
-    max-width: 330px;
+    max-width: 310px;
     width: 100%;
     justify-self: center;
     padding: 10px;
@@ -654,7 +688,11 @@ img {
     align-items: center;
     justify-content: center;
     background:
-        radial-gradient(circle at 50% 50%, rgba(85, 214, 194, 0.12), transparent 65%),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(85, 214, 194, 0.12),
+            transparent 65%
+        ),
         #080e1b;
     border-bottom: 1px solid var(--border);
 }
@@ -697,7 +735,11 @@ img {
     overflow: hidden;
     padding: 70px;
     background:
-        radial-gradient(circle at 100% 0%, rgba(85, 214, 194, 0.13), transparent 40%),
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(85, 214, 194, 0.13),
+            transparent 40%
+        ),
         var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -754,15 +796,21 @@ img {
 @media (max-width: 950px) {
 
     .hero-grid {
-        gap: 35px;
+        gap: 40px;
+        grid-template-columns: 1.1fr 0.9fr;
     }
 
     .hero h1 {
         font-size: 52px;
     }
 
-    .hero-visual {
-        max-width: 370px;
+    .hero-side {
+        min-height: 330px;
+        padding: 23px;
+    }
+
+    .hero-monogram {
+        font-size: 115px;
     }
 
     .skills-grid {
@@ -814,13 +862,14 @@ img {
     }
 
     .hero {
-        padding-top: 65px;
-        padding-bottom: 80px;
+        min-height: auto;
+        padding-top: 85px;
+        padding-bottom: 85px;
     }
 
     .hero-grid {
         grid-template-columns: 1fr;
-        gap: 55px;
+        gap: 50px;
     }
 
     .hero h1 {
@@ -836,23 +885,12 @@ img {
         margin-top: 35px;
     }
 
-    .hero-visual {
-        max-width: 440px;
-        width: 94%;
-        justify-self: center;
+    .hero-side {
+        min-height: 280px;
     }
 
-    .portrait-frame {
-        padding: 9px;
-    }
-
-    .tag-top {
-        left: -12px;
-    }
-
-    .tag-bottom {
-        right: -12px;
-        bottom: 70px;
+    .hero-monogram {
+        font-size: 125px;
     }
 
     .about-grid {
@@ -861,11 +899,11 @@ img {
     }
 
     .about-photo-wrap {
-        max-width: 290px;
+        max-width: 270px;
     }
 
     .about-photo {
-        height: 390px;
+        height: 350px;
     }
 
     .about-content h3 {
@@ -963,8 +1001,8 @@ img {
         width: 100%;
     }
 
-    .hero-visual {
-        width: 92%;
+    .hero-monogram {
+        font-size: 105px;
     }
 
     .skills-grid {
@@ -986,11 +1024,6 @@ img {
    ACCESSIBILITY
 ========================================= */
 
-a:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 4px;
-}
-
 @media (prefers-reduced-motion: reduce) {
 
     html {
@@ -1002,5 +1035,6 @@ a:focus-visible {
     *::after {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
