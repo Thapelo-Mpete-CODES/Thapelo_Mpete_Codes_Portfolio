@@ -1,134 +1,244 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thapelo Mpete | Codes </title>
+
+    <meta name="description" content="Portfolio of Thapelo Mpete, a Software Development graduate focused on C#, ASP.NET Core and full-stack development.">
+
+    <title>Thapelo Mpete | Software Developer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
 
-    <header>
-    <h1>Thapelo Mpete</h1>
-    <p>Junior Software Developer | “Codes”</p>
-</header>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Thapelo Mpete</h1>
+            <p>Junior Software Developer | C# | ASP.NET Core</p>
+        </div>
+    </header>
 
     <main>
-        <section id="about">
+
+        <!-- About Section -->
+        <section id="about" class="section">
             <h2>About Me</h2>
+
             <p>
-                I am a software development graduate student learning to code 
-                by building real-world projects. My focus is on practical skills
-                and continuous improvement.
+                I am a Software Development graduate interested in building
+                practical applications that solve real-world problems.
+                My primary development experience is with C#, ASP.NET Core MVC,
+                Entity Framework Core and SQL Server.
+
+                I enjoy learning by building projects, exploring new technologies
+                and continuously improving my software development skills.
             </p>
         </section>
 
-       <section id="projects">
-    <h2>Projects</h2>
 
-    <div class="projects-container">
+        <!-- Projects Section -->
+        <section id="projects" class="section">
 
-        <div class="project-card">
-            <h3>GapWise 2.0 – Educational Diagnostic &amp; Learning Platform</h3>
+            <h2>Projects</h2>
+
+            <div class="projects-container">
+
+                <!-- GapWise 2.0 -->
+                <article class="project-card featured-project">
+
+                    <div class="project-image-container">
+                        <img
+                            src="images/gapwise v2 dashboard.png"
+                            alt="GapWise 2.0 learner dashboard"
+                            class="project-image"
+                        >
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-label">Featured Project</span>
+
+                        <h3>GapWise 2.0 – Educational Diagnostic & Learning Platform</h3>
+
+                        <p>
+                            An ASP.NET Core MVC educational platform designed
+                            to help learners identify mathematics knowledge gaps
+                            through timed assessments.
+
+                            The platform includes user authentication,
+                            dashboards, exam setup, automated scoring,
+                            topic-level performance feedback, assessment
+                            history and a Learning Hub.
+                        </p>
+
+                        <h4>Technologies</h4>
+
+                        <ul>
+                            <li>C#</li>
+                            <li>ASP.NET Core MVC</li>
+                            <li>Entity Framework Core</li>
+                            <li>SQL Server</li>
+                            <li>ASP.NET Core Identity</li>
+                            <li>HTML, CSS and JavaScript</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/Thapelo-Mpete-CODES/GapWise.2.0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Source Code on GitHub →
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- Original GapWise -->
+                <article class="project-card">
+
+                    <div class="project-image-container">
+                        <img
+                            src="images/gapwise v1 landing.png"
+                            alt="Original GapWise learning platform landing page"
+                            class="project-image"
+                        >
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>GapWise – Diagnostic Learning Platform</h3>
+
+                        <p>
+                            An earlier version of the GapWise educational
+                            platform built with ASP.NET Core MVC.
+
+                            The application evaluates student strengths
+                            and weaknesses through concept-based diagnostic
+                            testing, generating 20-question assessments
+                            and topic-level feedback.
+                        </p>
+
+                        <h4>Technologies</h4>
+
+                        <ul>
+                            <li>ASP.NET Core MVC</li>
+                            <li>Entity Framework Core</li>
+                            <li>SQL Server</li>
+                            <li>Bootstrap</li>
+                            <li>Layered Service Architecture</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/Thapelo-Mpete-CODES/GapWiseSolution"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Source Code on GitHub →
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- Employment Management System -->
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <h3>Employment Management System</h3>
+
+                        <p>
+                            A web application designed to manage employee
+                            records within an organization.
+
+                            The system allows administrators to add,
+                            edit, view and delete employee information,
+                            demonstrating practical implementation of
+                            CRUD operations and database integration.
+                        </p>
+
+                        <h4>Technologies</h4>
+
+                        <ul>
+                            <li>ASP.NET Core MVC</li>
+                            <li>C#</li>
+                            <li>Entity Framework Core</li>
+                            <li>SQL Server</li>
+                            <li>HTML and CSS</li>
+                        </ul>
+
+                        <a
+                            href="https://github.com/Thapelo-Mpete-CODES/EmploymentManagementSystemApp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View Source Code on GitHub →
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+
+            <h2>Contact</h2>
 
             <p>
-                An ASP.NET Core MVC educational platform designed to help learners identify
-                mathematics knowledge gaps through timed assessments. It includes user
-                authentication, dashboards, exam setup, automated scoring, topic-level
-                performance feedback, assessment history, and a Learning Hub.
+                Interested in working together or discussing an opportunity?
+                Feel free to get in touch.
             </p>
 
-            <ul>
-                <li>C# and ASP.NET Core MVC</li>
-                <li>Entity Framework Core</li>
-                <li>SQL Server</li>
-                <li>ASP.NET Core Identity</li>
-                <li>HTML, CSS and JavaScript</li>
-            </ul>
+            <div class="contact-details">
 
-            <a href="https://github.com/Thapelo-Mpete-CODES/GapWise.2.0" target="_blank" rel="noopener noreferrer">
-                View Code on GitHub
-            </a>
-        </div>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:thapelompete25@outlook.com">
+                        thapelompete25@outlook.com
+                    </a>
+                </p>
 
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:0699988347">
+                        069 998 8347
+                    </a>
+                </p>
 
-        <div class="project-card">
-            <h3>GapWise – Diagnostic Learning Platform (Earlier Version)</h3>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a
+                        href="https://github.com/Thapelo-Mpete-CODES"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Thapelo-Mpete-CODES
+                    </a>
+                </p>
 
-            <p>
-                A full-stack ASP.NET Core MVC web application that evaluates 
-                student strengths and weaknesses using concept-based diagnostic testing.
-                The system generates 20-question assessments and provides topic-level
-                feedback to identify learning gaps.
-            </p>
-
-            <ul>
-                <li>ASP.NET Core MVC</li>
-                <li>Entity Framework Core</li>
-                <li>SQL Server</li>
-                <li>Bootstrap UI</li>
-                <li>Layered Service Architecture</li>
-            </ul>
-
-            <a href="https://github.com/Thapelo-Mpete-CODES/GapWiseSolution" target="_blank">
-                View Code on GitHub
-            </a>
-        </div>
-
-
-        <div class="project-card">
-            <h3>Employment Management System</h3>
-
-            <p>
-                A web application designed to manage employee records within an organization.
-                The system allows administrators to add, edit, view, and delete employee
-                information, demonstrating practical implementation of CRUD operations
-                and database integration.
-            </p>
-
-            <ul>
-                <li>ASP.NET Core MVC</li>
-                <li>C#</li>
-                <li>Entity Framework Core</li>
-                <li>SQL Server</li>
-                <li>HTML & CSS</li>
-            </ul>
-
-           <a href="https://github.com/Thapelo-Mpete-CODES/EmploymentManagementSystemApp" target="_blank">
-    View Code on GitHub
-</a>
-        </div>
-
-    </div>
-</section>
-
-
-        <section id="contact">
-    <h2>Contact</h2>
-    <p>
-        Email:
-        <a href="mailto:thapelompete25@outlook.com">
-            thapelompete25@outlook.com
-        </a>
-    </p>
-    <p>
-        Phone:
-        <a href="tel:0699988347">
-            069 998 8347
-        </a>
-    </p>
-</section>
+            </div>
+        </section>
 
     </main>
 
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Thapelo Mpete — Codes</p>
+    </footer>
+
     <script src="script.js"></script>
 
-
-    <footer>
-    <p>© 2026 Thapelo Mpete — Codes</p>
-</footer>
 </body>
 </html>
