@@ -267,24 +267,9 @@ img {
    HERO PROFILE PHOTO
 ========================================= */
 
-.hero-visual {
-    position: relative;
-    width: 100%;
-    max-width: 450px;
-    justify-self: end;
-}
 
-.portrait-frame {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    border: 1px solid rgba(85, 214, 194, 0.25);
-    border-radius: 12px;
-    background: var(--surface);
-    overflow: hidden;
-    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
-}
+
+
 
 .portrait-glow {
     position: absolute;
@@ -298,29 +283,6 @@ img {
     pointer-events: none;
 }
 
-.hero-photo {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1000 / 681;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 7px;
-    background: var(--surface-light);
-}
-
-.portrait-label {
-    position: relative;
-    z-index: 2;
-    margin-top: 10px;
-    padding: 13px 15px;
-    display: flex;
-    align-items: center;
-    background: rgba(11, 16, 32, 0.88);
-    border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 6px;
-}
 
 .portrait-label strong,
 .portrait-label small {
