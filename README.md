@@ -23,6 +23,6 @@ Features:
 
 
 Screenshots: 
-<img width="1365" height="719" alt="portfolio2" src="https://github.com/user-attachments/assets/a339181d-742c-4462-8730-56dc51190dcd" />
-<img width="1365" height="707" alt="portfolio1" src="https://github.com/user-attachments/assets/c88261ac-f6c0-4ce7-bbfe-429004c4b308" />
-<img width="1355" height="714" alt="portfolio3" src="https://github.com/user-attachments/assets/73ef09c9-e043-4718-8310-4731f37ddb3d" />
+<img width="1333" height="595" alt="port1" src="https://github.com/user-attachments/assets/8e01cdc3-f69a-4e9a-b5bc-c017b4ecf1c8" />
+<img width="1339" height="600" alt="port 3" src="https://github.com/user-attachments/assets/24452dfc-49ab-42de-99f2-6ea64c137a47" />
+<img width="1330" height="585" alt="port 2" src="https://github.com/user-attachments/assets/1d66182b-88b4-4a5b-83e2-9601e9aade8a" />
